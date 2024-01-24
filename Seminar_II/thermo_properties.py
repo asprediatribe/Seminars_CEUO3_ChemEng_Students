@@ -1,5 +1,5 @@
 import numpy as np
-import databank_OP3 as db
+import databankOP3 as db
 
 
 def pure_vapor_pressure(compounds, T):
