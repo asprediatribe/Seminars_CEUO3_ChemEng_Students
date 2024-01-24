@@ -1,5 +1,5 @@
-# This script (databankUOP3) is a data bank with all the relevant constants to perform calculations of thermodynamic
-# properties. All the values for the constants are taken from the appendix A
+# This script is a data bank with all the relevant constants to perform calculations of saturation (vapour) pressure of pure compounds.
+# All the values for the constants are taken from the appendix A
 # of "Properties of Gases and Liquids". The outputs are defined as follows:
 # 1) "antoine" correspond to the constant values of A, B, and C for the calculation of the vapor pressure,
 # using the expression # 1 (antoine equation).
@@ -15,7 +15,7 @@ properties = {
     "heptane": {"antoine": [4.02023, 1263.909, 216.432], "critical": [540.20, 27.40, 428.00], "Mw":100.204, "wac": 0.350}
 }
 
-# create a python list "cts_antoine" to store the values of the  (3) Antoine's constants
+# create an python list "cts_antoine" to store the values of the  (3) Antoine's constants
 cts_antoine = list(range(3))
 for i in range(3):
     cts_antoine[i] = properties["Compound"]["antoine"][i]
