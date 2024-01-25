@@ -7,9 +7,8 @@ import matplotlib.pyplot as plt
 import "name of your SCRIPT where Pbubble is performed" as BPid
 
 x1 = np.linspace(0.0, 1.0, 100)
-To = "Temperature of the system"  # K
-compounds = ["pentane", "heptane"]
-Tbo = np.zeros(len(x1))
+T = "Temperature of the system"  # K
+compounds = ["compound1", "compound2"]
 Pbo = np.zeros(len(x1))
 Yo = np.zeros((len(compounds), len(x1)))
 Ybo = np.zeros((len(compounds), len(x1)))
