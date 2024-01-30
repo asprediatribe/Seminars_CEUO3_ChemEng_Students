@@ -24,10 +24,10 @@ x = [0.4, 0.6]
 # This is just two different ways to specify a more
 # realistic initial guess :
 # 1 - Po is apx. the mean of the Psat of the pure compounds
-Po = sum(Pvap_mix) / 2
+# Po = sum(Pvap_mix) / 2
 # ------------------------------------------------------------
-# 2 - Po is apx. the pressure given by Partial Pressure Law in ideal mixtures
-# Po = sum(x*Pvap_mix)
+# 2 - Po is appx. to the pressure  given by Partial Pressure Law in ideal mixtures
+ Po = sum(x*Pvap_mix)
 # ----------------------------------------------------------------
 # Set a value (on porpose) for the equilibrium function.
 # This is necessary to allow the code to proceed with the instructions within the While loop.
