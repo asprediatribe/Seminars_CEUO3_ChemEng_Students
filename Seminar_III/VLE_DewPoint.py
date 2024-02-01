@@ -5,7 +5,7 @@ import thermo_properties as TP
 tol = 1.0e-10
 delta = 1.0e-5
 
-def Dew_point_ideal(compounds, P, y):
+def Dew_temperature_ideal(compounds, P, y):
     # input: system (compounds) of interest
     # input: Pressure of the system, P.  Remember: in a Dew Temperature calculation
     # the Pressure  is known and constant.
