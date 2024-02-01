@@ -10,21 +10,21 @@ import VLE_DewPoint as DP
 # -------------Specifications: ----------------------------
 # ---------------------------------------------------------
 # Binary system
-compounds = ["pentane", "heptane"]
+compounds = []
 # constant pressure across the column
-Po = 10.0
+Po = 
 # ---------------------------------------------------------
 # Composition (more volatile compound MVC)
 # Feed composition:
-zf = 0.5
+zf = 
 # Bottoms composition:
-xB = 0.05
+xB = 
 # Distillate composition:
-xD = 0.95
+xD = 
 # Reflux ratio:
-R = 3.35
+R = 
 # liquid fraction in the feed:
-q = 1.95
+q = 
 # ----------------------------------------------------------
 font1 = {'family': 'serif', 'color': 'k', 'size': 15}
 # Plot 45o - Line (Y=X)-------------------------------------
@@ -40,7 +40,7 @@ plt.grid()
 # --------------------------------------------------------
 # Plot equilibrium curve
 # --------------------------------------------------------
-# Here, the script invoke the function "VLE_BubblePoint"
+# Here, the script invokes the function "VLE_BubblePoint"
 # to calculate Y = VLE(X)
 Yo = np.zeros((len(compounds), len(xof)))
 for i in range(len(xof)):
@@ -110,7 +110,7 @@ plt.plot(x_strip, y_strip, 'm')
 # Graphical construction of the Staircase to determine th number of equilibrium - stages
 # ---------------------------------------------------------------------------------------
 # Set a given number of stages ----------------------------------------------------------
-N_stages = 5
+N_stages = 
 dg = 0.01
 # Total condenser assumption: The staircase starts at xD = yD
 x_Mc = [xD, 1 - xD]
@@ -119,7 +119,7 @@ xoo = x_Mc[0]
 # ----------------------------------------------------------------------------------------
 for i in range(N_stages):
     # First stage Staircase: x1 at VLE with YD = XD :
-    # the calculation involve the DewPont algorith X= VLE(P,Y)
+    # the calculation involve the Dew Point algorith X= VLE(P,Y)
     T_dew, X = DP.Dew_temperature_ideal(compounds, Po, yo)
     x_eq = X[0]
     plt.plot(x_eq, yo[0], 'yo')
