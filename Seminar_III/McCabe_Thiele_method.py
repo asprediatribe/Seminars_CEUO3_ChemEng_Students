@@ -10,21 +10,24 @@ import VLE_DewPoint as DP
 # -------------Specifications: ----------------------------
 # ---------------------------------------------------------
 # Binary system
-compounds = []
+compounds = ['pentane','heptane']
 # constant pressure across the column
-Po = 
+Po = 10
 # ---------------------------------------------------------
 # Composition (more volatile compound MVC)
 # Feed composition:
-zf = 
+zf = 0.5
 # Bottoms composition:
-xB = 
+xB = 0.05
 # Distillate composition:
-xD = 
+xD = 0.95
 # Reflux ratio:
-R = 
+R = 3.35
 # liquid fraction in the feed:
-q = 
+q = 1.95
+
+
+N_stages = 3
 # ----------------------------------------------------------
 font1 = {'family': 'serif', 'color': 'k', 'size': 15}
 # Plot 45o - Line (Y=X)-------------------------------------
@@ -110,7 +113,7 @@ plt.plot(x_strip, y_strip, 'm')
 # Graphical construction of the Staircase to determine th number of equilibrium - stages
 # ---------------------------------------------------------------------------------------
 # Set a given number of stages ----------------------------------------------------------
-N_stages = 
+
 dg = 0.01
 # Total condenser assumption: The staircase starts at xD = yD
 x_Mc = [xD, 1 - xD]
