@@ -32,19 +32,10 @@ def thermodynamic_constants(compounds):
         "hexane": {"antoine": [4.00139, 1170.875, 224.317], "critical": [507.60, 30.25, 368.00], "Mw":86.177, "wac":0.300},
         "i-butane": {"antoine": [4.00272, 947.5400, 248.870], "critical": [407.85, 36.40, 262.70], "Mw": 58.123,
                      "wac": 0.186},
-        "n-butane": {"antoine": [3.93266, 935.7730,238.789], "critical": [407.85, 36.40, 262.70], "Mw": 58.123,
-                     "wac": 0.186},
         "i-pentane": {"antoine": [3.92023, 1022.880, 233.460], "critical": [460.39, 33.81, 308.30], "Mw": 72.150,
-                      "wac": 0.229},
-        "n-pentane": {"antoine": [3.97786,1064.840,232.014], "critical": [460.39, 33.81, 308.30], "Mw": 72.150,
                       "wac": 0.229},
         "butane": {"antoine": [3.93266, 935.7730, 238.789], "critical": [425.12, 37.96, 255.00], "Mw": 58.123,
                    "wac": 0.200},
-        "octane": {"antoine": [4.05075, 1356.360, 209.635], "critical": [425.12, 37.96, 255.00], "Mw": 58.123,
-                   "wac": 0.200},
-        "nonane": {"antoine": [ 4.07356, 1438.030, 202.694], "critical": [425.12, 37.96, 255.00], "Mw": 58.123,
-                   "wac": 0.200}
-
     }
     cts_antoine  = np.zeros((len(compounds),3)).tolist()
     # cts_antoine is a matrix of Zeros (0), containing the required compounds in the ROWS and the antoine constants,
